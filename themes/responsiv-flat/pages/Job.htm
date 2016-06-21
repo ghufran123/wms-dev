@@ -1,0 +1,105 @@
+title = "Job"
+url = "/job"
+layout = "default"
+description = "List all the customer's Job"
+is_hidden = 0
+
+[session]
+security = "all"
+
+[builderList ViewJob]
+modelClass = "HerzGarlan\Jobs\Models\DeliveryOrder"
+scope = "-"
+displayColumn = "delivery_status"
+noRecordsMessage = "ViewJob"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList Postal]
+modelClass = "HerzGarlan\Jobs\Models\DeliveryOrder"
+scope = "-"
+displayColumn = "postal_from"
+noRecordsMessage = "Postal"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList postalto]
+modelClass = "HerzGarlan\Jobs\Models\DeliveryOrder"
+scope = "-"
+displayColumn = "postal_to"
+noRecordsMessage = "postalto"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList deliverydate]
+modelClass = "HerzGarlan\Jobs\Models\DeliveryOrder"
+scope = "-"
+displayColumn = "order_date"
+noRecordsMessage = "deliverydate"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList time]
+modelClass = "HerzGarlan\Jobs\Models\DeliveryOrder"
+scope = "-"
+displayColumn = "created_at"
+noRecordsMessage = "time"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList update]
+modelClass = "HerzGarlan\Jobs\Models\DeliveryOrder"
+scope = "-"
+displayColumn = "updated_at"
+noRecordsMessage = "update"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList product]
+modelClass = "HerzGarlan\Inventory\Models\Product"
+scope = "-"
+displayColumn = "name"
+noRecordsMessage = "product"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section id="layout-title">
+    <div class="container">
+        <h3>Job</h3>
+    </div>
+</section>
+
+<div class="row">       
+    <table border=1 style="margin-left:20px">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Delivery Status</th>
+                <th>From Postal Code</th>
+                <th>To Postal Code</th>
+                <th>Delivery Date</th>
+                <th>Create Date</th>
+                <th>Update Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{% component 'product' %}</td>
+                <td>{% component 'ViewJob' %}</td>
+                <td>{% component 'Postal' %}</td>
+                <td>{% component 'postalto' %}</td>
+                <td>{% component 'deliverydate' %}</td>
+                <td>{% component 'time' %}</td>
+                <td>{% component 'update' %}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</br>

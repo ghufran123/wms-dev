@@ -1,0 +1,4 @@
+title: ViewJobs
+modelClass: HerzGarlan\Jobs\Models\ViewJobs
+toolbar:
+    buttons: reorder_toolbar

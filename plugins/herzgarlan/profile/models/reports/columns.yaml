@@ -1,0 +1,6 @@
+columns:
+    delivery_status:
+        label: 'herzgarlan.jobs::lang.delivery_status'
+        type: text
+        searchable: true
+        sortable: true

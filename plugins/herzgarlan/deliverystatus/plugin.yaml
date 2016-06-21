@@ -1,0 +1,6 @@
+plugin:
+    name: Delivery
+    description: 'Delivery List'
+    author: 'Herzon Garlan'
+    icon: oc-icon-user-secret
+    homepage: ''

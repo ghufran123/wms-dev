@@ -1,0 +1,46 @@
+fields:
+    tracking_no:
+        label: 'Tracking NO.'
+        size: tiny
+        span: auto
+        required: 0
+        type: textarea
+    product:
+        label: Product
+        size: tiny
+        span: auto
+        type: textarea
+    from_postal:
+        label: 'From Postal Code'
+        size: tiny
+        span: auto
+        type: textarea
+    destination_postal:
+        label: 'Destination Postal Code'
+        size: tiny
+        span: auto
+        type: textarea
+    delivery_date:
+        label: 'Delivery Date'
+        mode: datetime
+        span: auto
+        type: datepicker
+    created_date:
+        label: 'Created Date'
+        mode: datetime
+        span: auto
+        type: datepicker
+    updated_date:
+        label: 'Updated Date'
+        mode: datetime
+        span: auto
+        type: datepicker
+    status:
+        label: 'rainlab.delivery::lang.plugin.status'
+        span: auto
+        type: text
+    customer:
+        label: 'rainlab.delivery::lang.plugin.customer'
+        oc.commentPosition: above
+        span: auto
+        type: text

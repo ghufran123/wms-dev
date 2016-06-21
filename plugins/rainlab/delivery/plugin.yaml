@@ -1,0 +1,23 @@
+plugin:
+    name: 'rainlab.delivery::lang.plugin.name'
+    description: 'rainlab.delivery::lang.plugin.description'
+    author: rainlab
+    icon: oc-icon-clipboard
+    homepage: ''
+permissions:
+    rainlab.delivery.create_records:
+        tab: 'rainlab plugin'
+        label: 'create new records'
+    rainlab.delivery.edit_records:
+        tab: 'rainlab plugin'
+        label: 'edit existing records'
+navigation:
+    main-menu-item:
+        label: Delivery
+        url: rainlab/delivery/Delivery
+        icon: icon-clipboard
+        sideMenu:
+            side-menu-item:
+                label: 'Delivery Order'
+                url: /
+                icon: icon-list

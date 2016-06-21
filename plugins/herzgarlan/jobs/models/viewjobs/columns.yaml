@@ -1,0 +1,19 @@
+columns:
+    delivery_status:
+        label: 'herzgarlan.jobs::lang.delivery_status'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'herzgarlan.jobs::lang.job_entry'
+        type: text
+        sortable: true
+    postal_from:
+        label: 'herzgarlan.jobs::lang.postal_from'
+        type: number
+        searchable: true
+        sortable: true
+    order_date:
+        label: 'herzgarlan.jobs::lang.time_slot'
+        type: text
+        sortable: true

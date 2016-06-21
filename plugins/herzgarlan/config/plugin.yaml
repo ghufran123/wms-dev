@@ -1,0 +1,36 @@
+plugin:
+    name: 'herzgarlan.config::lang.plugin.name'
+    description: 'herzgarlan.config::lang.plugin.description'
+    author: 'Herzon Garlan'
+    icon: oc-icon-gears
+    homepage: ''
+permissions:
+    herzgarlan.config.manage_config:
+        tab: 'herzgarlan.config::lang.plugin.name'
+        label: 'herzgarlan.config::lang.config.manage_config'
+navigation:
+    config:
+        label: 'herzgarlan.config::lang.plugin.name'
+        url: herzgarlan/config/rates
+        icon: icon-gears
+        permissions:
+            - herzgarlan.config.manage_config
+        sideMenu:
+            rates:
+                label: 'herzgarlan.config::lang.rate.rates'
+                url: herzgarlan/config/rates
+                icon: icon-money
+                permissions:
+                    - herzgarlan.config.manage_config
+            timeslots:
+                label: 'herzgarlan.config::lang.timeslot.time_slot'
+                url: herzgarlan/config/timeslot
+                icon: icon-clock-o
+                permissions:
+                    - herzgarlan.config.manage_config
+            blockeddates:
+                label: 'herzgarlan.config::lang.blocked_dates.blocked_dates'
+                url: herzgarlan/config/blockeddates
+                icon: icon-calendar-o
+                permissions:
+                    - herzgarlan.config.manage_config

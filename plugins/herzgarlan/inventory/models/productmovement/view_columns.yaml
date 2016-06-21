@@ -1,0 +1,19 @@
+
+columns:
+    product:
+        label: Product
+        relation: product
+        select: name
+    backend_user:
+        label: Moved by
+        relation: backend_user
+        select: first_name
+    reason:
+        label: Reason
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: Date/Time of Last Movement
+        type: datetime
+        sortable: true

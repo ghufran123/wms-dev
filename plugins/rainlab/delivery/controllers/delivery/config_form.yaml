@@ -1,0 +1,10 @@
+name: Delivery
+form: $/rainlab/delivery/models/records/fields.yaml
+modelClass: Rainlab\Delivery\Models\Records
+defaultRedirect: rainlab/delivery/delivery
+create:
+    redirect: 'rainlab/delivery/delivery/update/:id'
+    redirectClose: rainlab/delivery/delivery
+update:
+    redirect: rainlab/delivery/delivery
+    redirectClose: rainlab/delivery/delivery

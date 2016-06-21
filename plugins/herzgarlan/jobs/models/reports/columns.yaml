@@ -1,0 +1,6 @@
+columns:
+    rate_id:
+        label: 'herzgarlan.jobs::lang.rate'
+        type: text
+        searchable: true
+        sortable: true

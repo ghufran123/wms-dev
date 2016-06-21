@@ -1,0 +1,32 @@
+fields:
+    name:
+        label: 'herzgarlan.config::lang.rate.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: 'herzgarlan.config::lang.rate.slug'
+        span: auto
+        preset:
+            field: name
+            type: str_random(40)
+        type: text
+    value:
+        label: 'herzgarlan.config::lang.rate.value'
+        span: auto
+        type: number
+    operator:
+        label: 'herzgarlan.config::lang.rate.operator'
+        hidden: 0
+        options:
+            none: None
+            +: Add
+            '-': Deduct
+        span: auto
+        type: dropdown
+        comment: 'herzgarlan.config::lang.rate.operator_comment'
+    short_description:
+        label: 'herzgarlan.config::lang.rate.description'
+        size: tiny
+        span: full
+        type: textarea

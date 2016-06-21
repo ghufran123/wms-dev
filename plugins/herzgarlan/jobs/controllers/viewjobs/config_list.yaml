@@ -1,0 +1,10 @@
+title: ViewJobs
+modelClass: HerzGarlan\Jobs\Models\ViewJobs
+list: $/herzgarlan/jobs/models/viewjobs/columns.yaml
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

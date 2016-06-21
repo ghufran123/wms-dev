@@ -1,0 +1,86 @@
+fields:
+    name:
+        label: 'herzgarlan.inventory::lang.product.name'
+        span: auto
+        required: 1
+        type: text
+    code:
+        label: 'herzgarlan.inventory::lang.product.code'
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+    customer:
+        label: 'herzgarlan.inventory::lang.product.customer'
+        span: auto
+        required: 1
+        placeholder: 'herzgarlan.inventory::lang.product.customer_placeholder'
+        type: dropdown
+        comment: 'Note: Only Activated customers will appear here.'
+    barcode:
+        label: 'herzgarlan.inventory::lang.product.barcode'
+        span: auto
+        type: text
+    description:
+        label: Description
+        size: tiny
+        span: full
+        type: textarea
+    carton_quantity:
+        label: 'herzgarlan.inventory::lang.product.carton_qty'
+        span: auto
+        required: 1
+        type: text
+    unit_quantity:
+        label: 'herzgarlan.inventory::lang.product.unit_qty'
+        span: auto
+        required: 1
+        type: text
+    dimension:
+        label: 'herzgarlan.inventory::lang.product.dimension'
+        span: auto
+        type: text
+        commentAbove: 'W x H x D (20cm x 40cm x 50cm)'
+    weight:
+        label: 'herzgarlan.inventory::lang.product.weight'
+        span: auto
+        type: text
+        commentAbove: 'Please indicate unit of measurement ( e.g. 500g )'
+    additional_info:
+        label: 'herzgarlan.inventory::lang.product.additional_info'
+        size: tiny
+        span: full
+        type: textarea
+    loose_carton:
+        label: 'herzgarlan.inventory::lang.loose_carton'
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                carton:
+                    label: 'herzgarlan.inventory::lang.carton'
+                    span: auto
+                    type: number
+                pieces:
+                    label: 'herzgarlan.inventory::lang.pieces'
+                    span: auto
+                    type: number
+    photo:
+        label: 'herzgarlan.inventory::lang.product.photo'
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+tabs:
+    fields:
+        productmovement:
+            span: full
+            path: field_productmovement
+            type: partial
+            tab: 'Product Movement'
